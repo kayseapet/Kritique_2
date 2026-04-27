@@ -1,0 +1,48 @@
+.create-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background to match image context */
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.create-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create-form input[type="text"], 
+.create-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.create-form input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make the button full width of the form */
+}
+
+.create-form input[type="submit"]:hover {
+    background-color: #333;
+}

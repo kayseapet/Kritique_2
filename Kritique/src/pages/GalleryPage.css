@@ -1,0 +1,75 @@
+/* src/pages/GalleryPage.css */
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px; /* Space for the fixed menu button */
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark theme matching CreatePostPage */
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-header {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(240, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+.sort-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sort-controls button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sort-controls button:hover {
+    background-color: #444;
+}
+
+/* Style for the currently selected sort option */
+.sort-controls button.active-sort {
+    background-color: blueviolet; /* Matches your gallery-btn style */
+    border-color: blueviolet;
+}
+
+.posts-grid {
+    display: grid;
+    /* Changing 300px to 200px allows more items per row */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px; /* Increased max-width for better horizontal flow */
+    margin: 0 auto;
+}
+
+.no-posts {
+    grid-column: 1 / -1; /* Stretch across the whole grid */
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    color: #888;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .gallery-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

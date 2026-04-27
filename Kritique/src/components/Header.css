@@ -1,0 +1,30 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgba(17, 17, 17, 0.95); /* Matches your footer/sidebar */
+    border-bottom: 1px solid rgba(137, 43, 226, 0.3); /* Subtle purple border */
+    position: sticky;
+    top: 0;
+    z-index: 1100; /* Higher than sidebar overlay */
+    height: 60px;
+}
+
+.site-logo {
+    text-decoration: none;
+}
+
+.site-logo h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure; /* Matches your hero title color */
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}

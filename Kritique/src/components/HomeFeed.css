@@ -1,0 +1,33 @@
+/* src/components/HomeFeed.css */
+.home-feed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; /* Align to start to allow scrolling from the left */
+    align-items:normal;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    /* Horizontal Scroll Logic */
+    overflow-x: auto; 
+    white-space: nowrap; /* Prevents items from wrapping to a new line */
+    scrollbar-width: thin; /* Optional: cleaner scrollbar for Firefox */
+}
+
+/* Ensure cards maintain their size and don't squish */
+.home-feed-container .post-preview-link {
+    flex: 0 0 300px; /* Do not grow, do not shrink, stay 300px wide */
+    width: 80%;
+    height: 85%;
+}
+
+/* Optional: Style the scrollbar for Chrome/Safari */
+.home-feed-container::-webkit-scrollbar {
+    height: 8px;
+}
+.home-feed-container::-webkit-scrollbar-thumb {
+    background: blueviolet;
+    border-radius: 10px;
+}

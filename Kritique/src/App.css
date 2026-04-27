@@ -1,0 +1,175 @@
+
+body{
+    margin: 0%;
+    background-color: #1a1a1a;
+}
+.hero-container
+{
+    display: flex;
+    ;
+    background-image: url(./assets/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+.hero-content
+{
+    height:max-content;
+    width:max-content;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    align-self: center;
+}
+.hero-title
+{
+    color:azure;
+    font: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: center;
+}
+.hero-btn{
+    width: 200px;
+    height: 50px;
+    align-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(137, 43, 226, 0.586);
+    color: white;
+}
+
+
+
+.posts-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
+    padding: 1px 20px;
+    background-color: #1a1a1a;
+}
+
+.gallery-btn {
+    background-color: blueviolet;
+    color: white;
+    width: 200px;       /* Bigger width */
+    height: 50px;       /* Bigger height */
+    font-size: 1.0rem;  /* Larger text */
+    cursor: pointer;
+    margin-top: 3px;   /* Space from the feed */
+    margin-bottom: 5px;
+    transition: transform 0.2s;
+}
+
+.gallery-btn:hover {
+    transform: scale(1.05);
+    background-color: #7a22e0;
+}
+.section-header
+{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color:azure;
+   margin-bottom: 0%;
+}
+/* How it Works Section */
+.how-it-works {
+    padding: 10px 20px;
+    background-color: #222; /* Slightly different dark shade for contrast */
+    text-align: center;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(240, 255, 255, 0.1);
+    padding: 30px;
+    max-width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    border-color: blueviolet;
+}
+
+.step-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.step-card h3 {
+    color: azure;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+.app-footer {
+    background-color: #111;
+    color: azure;
+    padding: 50px 20px 20px;
+    border-top: 1px solid #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: blueviolet;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 0.8rem;
+}
